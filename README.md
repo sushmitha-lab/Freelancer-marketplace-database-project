@@ -1,35 +1,87 @@
-# Freelancer Marketplace Database Project
-Database Management System project demonstrating schema design, relational modeling, and SQL queries using SQLite.
+# Freelancer Marketplace Database Management System
 
-##Overview
+## 📌 Overview
+This project implements a **relational database system** for a freelancer marketplace platform (similar to Upwork or Fiverr).  
+The database is designed to manage users, job postings, applications, bids, skills, and reviews while supporting analytical SQL queries for business insights.
 
-This project focuses on designing and implementing a relational database system for a freelancer marketplace application. The database models real-world interactions between freelancers and clients, including job postings, applications, bidding, skills, and reviews. The objective of the project is to demonstrate strong fundamentals in database design, normalization, and SQL querying through a realistic business use case.
+The project demonstrates strong foundations in **database design, normalization, and SQL querying** using a real-world business scenario.
 
-##Problem Statement
+## 🧩 Business Problem
+Freelancer platforms must efficiently manage:
+- Multiple users (clients and freelancers)
+- Job postings with budgets and deadlines
+- Applications and competitive bidding
+- Skill-based matching
+- Reviews and performance tracking
 
-Freelancer platforms require structured storage of user data, job listings, bids, and performance metrics while maintaining data integrity and scalability. Managing these interconnected entities efficiently is critical for operational reporting and analytical insights. This project addresses these challenges by translating platform requirements into a well-structured relational database.
+Without a well-structured database, tracking job activity, freelancer performance, and platform analytics becomes inefficient and error-prone.
 
-##Database Design
+## 🏗️ Database Design
+The database follows **normalized relational design principles** with clearly defined primary and foreign keys.
 
-The database schema was designed using relational modeling principles with properly defined primary keys and foreign keys to enforce referential integrity. The design supports one-to-many relationships such as users to job postings, as well as many-to-many relationships such as jobs and required skills. Normalization techniques were applied to reduce redundancy and improve consistency across tables.
+### Core Entities
+- **Users** (Clients & Freelancers)
+- **Jobs**
+- **Applications**
+- **Bids**
+- **Skills**
+- **JobSkills** (many-to-many relationship)
+- **Reviews**
 
-##Implementation
+Relationships are enforced using foreign key constraints to ensure data integrity.
 
-The database was implemented using SQLite and managed through DB Browser for SQLite. Tables were created to represent users, freelancers, clients, jobs, bids, skills, and reviews. Sample data was inserted to simulate real platform activity and validate the schema design. The project files include the database file, schema design artifacts, and supporting documentation.
+## ⚙️ Key Features
+- Clients can post jobs with budgets and deadlines  
+- Freelancers can apply or place bids on jobs  
+- Jobs can receive multiple bids from different freelancers  
+- Skills are mapped to jobs using a many-to-many relationship  
+- Reviews and ratings are stored after job completion  
+- Analytical SQL queries provide platform-level insights  
 
-##SQL Queries and Analysis
+---
 
-SQL queries were written to answer practical business and analytical questions such as identifying the most active freelancers, tracking bid competition, finding lowest bids for jobs, analyzing freelancer ratings, and monitoring job completion trends. The queries make extensive use of joins, aggregation functions, filtering, and grouping to extract insights across multiple tables.
+## 📊 SQL Capabilities Demonstrated
+- Multi-table **JOINs**
+- **GROUP BY** and aggregation functions (COUNT, AVG, MIN)
+- Filtering and conditional queries
+- Many-to-many relationship handling
+- Analytical queries for reporting and insights
 
-##Tools and Technologies
 
-This project was developed using SQLite for database management and DB Browser for SQLite for querying and visualization. SQL was used extensively for schema creation, data manipulation, and analytical querying. GitHub is used for version control and project documentation.
+## 📈 Sample Analytical Queries
+- Total number of bids per job  
+- Jobs with the **lowest bid** and corresponding freelancer  
+- Average rating of freelancers  
+- Job application status tracking  
+- Review and rating analysis  
 
-##Learning Outcomes
 
-Through this project, I strengthened my understanding of relational database design, normalization, SQL joins, and analytical querying. The project demonstrates my ability to design databases from scratch, translate business requirements into schemas, and extract meaningful insights using SQL.
+## 🛠️ Tools & Technologies
+- **SQL**
+- **SQLite**
+- **DB Browser for SQLite**
+- **Relational Database Design**
+- **Git & GitHub**
 
-Author
 
-Sushmitha Katherine Jayaraj
+## 🚀 Learning Outcomes
+- Designed a real-world relational database from scratch  
+- Applied normalization and schema design best practices  
+- Wrote complex SQL queries for analytics and reporting  
+- Gained hands-on experience with database management tools  
+
+
+## 📌 Use Cases
+- SQL portfolio project
+- Database design demonstration
+- Interview-ready relational database example
+- Analytics-focused SQL project
+
+
+## 👤 Author
+**Sushmitha Katherine Jayaraj**  
+Graduate Student – Analytics  
+Aspiring Data Scientist / Analytics Engineer
+
+
 
